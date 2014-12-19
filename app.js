@@ -19,4 +19,9 @@ $(document).ready(function() {
 		var $memeImage = $("#imageURL").val();
 		$('#imgHolder').css('background-image', 'url('+$memeImage+')');
 	});
+
+	$('.btn').click(function() {
+		$('.meHigh').toggleClass('selected');
+		$('.meLow').toggleClass('selected');
+	});
 });
